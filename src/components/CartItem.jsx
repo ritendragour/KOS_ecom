@@ -46,18 +46,18 @@ const CartItem = ({ cart }) => {
             <h5 className="card-title">{title}</h5>
             <span className='df'>
               <h4>Price : {price}</h4>
-              {/* <h4>Total Price : {multiPrice}</h4> */}
+              <h4>Total Price : {multiPrice}</h4>
             </span>
             <span className="card-body df">
               {/* quantity logic */}
-              {/* <div className='df'>
+              <div className='df'>
                 <button className='btn border border-dark' id={quantity === 1 ? "noPrice" : "havePrice"}
                   onClick={() => manyUseSub()}><GrFormSubtract /></button>
                 <button className='btn border border-dark ' id={quantity !== 1 ? "noPrice" : "havePrice"} disabled><GrFormSubtract /></button>
                 <button className='btn'><h2>{quantity}</h2></button>
                 <button className='btn border border-dark'
                   onClick={() => manyUseSum()}><AiOutlinePlus /></button>
-              </div> */}
+              </div>
 
               <div className="float-end">
                 <button className='btn btn-danger' onClick={() => removeCart(id)}>Remove</button>

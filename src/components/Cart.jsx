@@ -24,6 +24,7 @@ const Cart = () => {
   return (
     <>
       <div className="float-end w-100">
+        <Button color='inherit' variant='contained' className='float-end my-3 mx-5' ><Link to={"/buy"} className='text-decoration-none text-dark'>{<FcMoneyTransfer/>} Buy TO PROCEED</Link></Button>
       </div>
 
       <div className="container">
