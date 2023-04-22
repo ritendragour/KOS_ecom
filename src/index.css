@@ -1,0 +1,45 @@
+*{
+    padding: 0;margin: 0; box-sizing: border-box;
+}
+.navbar{
+    padding: 2px;
+}
+.card-img-top{
+    width: 100%;
+    height: 50vh;
+}
+.card-text{
+    display: -webkit-box;
+    text-align: justify;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient :vertical;
+    overflow: hidden;
+}
+#noPrice{
+    display: none;
+}
+#havePrice{
+    display: block;
+}
+.df{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-header {
+    background-color: #2F435A;
+}
+.navProduct{
+    display: block;
+}
+.noNavProduct{
+    display: none;
+}
+@media (max-width:768px) {
+    .navProduct{
+        display: none;
+    }
+    .noNavProduct{
+        display: block;
+    }
+}
