@@ -34,6 +34,7 @@ const CartItem = ({ cart }) => {
 
   const [multiPrice, setMultiPrice] = useState(price)
 
+  
   return (
     <>
       <div className="card mt-5 productItem col-xl-4 p-3">
@@ -47,7 +48,7 @@ const CartItem = ({ cart }) => {
             <span className='df'>
               <h4>Price : {price}</h4>
               <h4>Total Price : {multiPrice}</h4>
-            </span>
+           </span>
             <span className="card-body df">
               {/* quantity logic */}
               <div className='df'>
