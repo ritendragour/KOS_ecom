@@ -19,20 +19,24 @@ const CartItem = ({ cart }) => {
   
   const manyUseSum = () => {
     setQuantity(quantity + 1)
-    multiPriceFun()
+    setMultiPrice((quantity + 1) * price)
+    
   }
 
   const manyUseSub = () => {
     setQuantity(quantity - 1)
-    multiPriceFun()
+    setMultiPrice((quantity - 1) * price)
   }
 
-  const multiPriceFun = () => {
-    return setMultiPrice(quantity * price)
-  }
+  // const multiPriceFun = () => {
+  //   return setMultiPrice(quantity * price)
+  // }
   const [quantity, setQuantity] = useState(1)
 
   const [multiPrice, setMultiPrice] = useState(price)
+  // console.log(quantity)
+  // console.log(multiPrice)
+
 
   return (
     <>

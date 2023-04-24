@@ -35,15 +35,15 @@
         display: flex;
         flex-direction: column;
         height: 50vh;
-        justify-content: space-between;
-    
+        justify-content: space-between; 
+}
+.cartH{
+    height: 100vh;
 }
 .dfr{
     display: flex;
     flex-direction: row;
-    background-color: bisque;
     width: 70vw;
-    /* align-items: center; */
     margin-top: 5px;
     padding: 5px 50px;
     justify-content: space-between;
