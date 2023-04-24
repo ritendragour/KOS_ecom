@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import ProductContext from '../context/ProductContext'
 import CartContext from '../CartContext/CartContext'
-import { FcMoneyTransfer } from "react-icons/fc";
 
 const ProductItem = ({ Product }) => {
   const { image, title, price, id } = Product
@@ -43,7 +42,6 @@ const ProductItem = ({ Product }) => {
                 } */}
                 Add Cart
               </button>
-              <button className="btn btn-primary"><FcMoneyTransfer /> Buy</button>
             </span>
 
           </div>

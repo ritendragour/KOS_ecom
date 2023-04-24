@@ -43,7 +43,7 @@
 .dfr{
     display: flex;
     flex-direction: row;
-    width: 70vw;
+    width: 100%;
     margin-top: 5px;
     padding: 5px 50px;
     justify-content: space-between;
@@ -62,6 +62,14 @@
 }
 .cart-titleW{
     width: 40%;
+}
+.cart-df{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+.buy-mobile{
+    width: 25%;
 }
 @media (max-width:768px) {
     .navProduct{
@@ -87,6 +95,13 @@
         width: 100%;
     }
     .cart-titleW{
+        width: 100%;
+    }
+    .cart-df{
+        width: 100%;
+    flex-direction: column-reverse;
+    }
+    .buy-mobile{
         width: 100%;
     }
 }

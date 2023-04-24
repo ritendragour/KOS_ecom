@@ -9,7 +9,7 @@ const CartItem = ({ cart }) => {
 
   const { image, title, price, id } = cart
 
-  const { Cart,dispatch } = useContext(CartContext)
+  const {dispatch } = useContext(CartContext)
 
   const removeCart = (id) => {
     dispatch({
@@ -35,6 +35,8 @@ const CartItem = ({ cart }) => {
 
   return (
     <>
+<div className="cart-df">
+  <div className='w-75 mx-5'>
     <button className="btn btn-warning w-25 mt-3 mx-3 navProduct mb-2 float-end" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseExample" + id} aria-expanded="false" aria-controls="collapseExample">
                 Hide / Show
               </button>
@@ -64,18 +66,20 @@ const CartItem = ({ cart }) => {
                 <button className='btn border border-dark'
                   onClick={() => manyUseSum()}><AiOutlinePlus /></button>
               </div>
-              {/* <div className="float-end">
-                <button className='btn btn-danger' onClick={() => removeCart(id)}>Remove</button>
-              </div> */}
-              
             </span>
             <span className=''>
-              <h2 className=''>Total Price : {multiPrice}</h2>
+              <h2 className=''>Total Price : {parseFloat(multiPrice).toFixed(2)}</h2>
             </span>
           </span>
         </div>
       </div>
       {/* </div> */}
+  </div>
+      <div className=" m-2 buy-mobile">
+
+<Buy  multiPrice= {multiPrice}/>
+      </div>
+</div>
     </>
   )
 }
