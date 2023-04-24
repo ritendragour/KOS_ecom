@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsCartCheck,BsChatDots } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
+import { Button } from '@mui/material';
+import { FaShoppingBag } from "react-icons/fa";
+
 
 const Ecom = ({ TCart }) => {
   return (
@@ -105,7 +108,9 @@ const Ecom = ({ TCart }) => {
                 </ul>
               </li>
             </ul>
+
           </div>
+        {/* <Button color='inherit' variant='contained' className='float-end my-3 mx-5' ><Link to={"/"} className='text-decoration-none text-dark'>{<FaShoppingBag />} Continue to shopping</Link></Button> */}
         </div>
       </nav>
     </header>

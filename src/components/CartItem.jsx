@@ -36,7 +36,7 @@ const CartItem = ({ cart }) => {
   return (
     <>
 <div className="cart-df">
-  <div className='w-75 mx-5'>
+  <div className='w-75 cart-mobile mx-5'>
     <button className="btn btn-warning w-25 mt-3 mx-3 navProduct mb-2 float-end" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseExample" + id} aria-expanded="false" aria-controls="collapseExample">
                 Hide / Show
               </button>
@@ -68,7 +68,7 @@ const CartItem = ({ cart }) => {
               </div>
             </span>
             <span className=''>
-              <h2 className=''>Total Price : {parseFloat(multiPrice).toFixed(2)}</h2>
+              <h2 className='mb-5'>Total Price : {parseFloat(multiPrice).toFixed(2)}</h2>
             </span>
           </span>
         </div>

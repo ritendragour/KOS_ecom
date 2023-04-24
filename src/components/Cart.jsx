@@ -25,13 +25,13 @@ const Cart = () => {
   }
   return (
     <>
-      <div className="float-end w-100">
+      <div className="float-end w-100 ">
         {/* <Button color='inherit' variant='contained' className='float-end my-3 mx-5' ><Link to={"/buy"} className='text-decoration-none text-dark'>{<FcMoneyTransfer />} Buy TO PROCEED</Link></Button> */}
         <Button color='inherit' variant='contained' className='float-end my-3 mx-5' ><Link to={"/"} className='text-decoration-none text-dark'>{<FaShoppingBag />} Continue to shopping</Link></Button>
       </div>
 
       <div className="">
-        <div className='row gx-5 '>
+        <div className=''>
           {
             Cart.map(cart => <CartItem key={cart.id} cart={cart} />)
           }
