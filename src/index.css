@@ -57,6 +57,12 @@
 .noNavProduct{
     display: none;
 }
+.cart-img{
+    width: 50%;
+}
+.cart-titleW{
+    width: 40%;
+}
 @media (max-width:768px) {
     .navProduct{
         display: none;
@@ -72,5 +78,11 @@
         width: 100%;
         height: auto;
         flex-direction: column;
+    }
+    .cart-img{
+        width: 100%;
+    }
+    .cart-titleW{
+        width: 100%;
     }
 }
