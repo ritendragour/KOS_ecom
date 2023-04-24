@@ -16,11 +16,11 @@ const CartItem = ({ cart }) => {
       payload: id
     })
   }
-  
+
   const manyUseSum = () => {
     setQuantity(quantity + 1)
     setMultiPrice((quantity + 1) * price)
-    
+
   }
 
   const manyUseSub = () => {
@@ -34,30 +34,28 @@ const CartItem = ({ cart }) => {
   const [quantity, setQuantity] = useState(1)
 
   const [multiPrice, setMultiPrice] = useState(price)
-  // console.log(quantity)
-  // console.log(multiPrice)
-
+  console.log(multiPrice)
 
   return (
     <>
       {/* <div className="card mt-5 productItem col-xl-4 p-3 "> */}
-        
-        <div className="collapse show" id={"collapseExample" + id}>
-          <div className="card card-body dfr">
+
+      <div className="collapse show" id={"collapseExample" + id}>
+        <div className="card card-body dfr">
           <span>
             <img src={image} className="card-img-top" alt="Product" />
-            </span>
-            <span className='dfc'>
-              <div className="btn-manager">
-            <button className="btn btn-warning w-25 mt-3 navProduct mb-2 float-end" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseExample" + id} aria-expanded="false" aria-controls="collapseExample">
-          H / S
-        </button>
-              </div>
+          </span>
+          <span className='dfc'>
+            <div className="btn-manager">
+              <button className="btn btn-warning w-25 mt-3 navProduct mb-2 float-end" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseExample" + id} aria-expanded="false" aria-controls="collapseExample">
+                H / S
+              </button>
+            </div>
             <h5 className="card-title mt-3">{title}</h5>
             <span className='df'>
               <h4>Price : {price}</h4>
               <h4>Total Price : {multiPrice}</h4>
-           </span>
+            </span>
             <span className="card-body df">
               {/* quantity logic */}
               <div className='df'>
@@ -73,9 +71,9 @@ const CartItem = ({ cart }) => {
               </div>
             </span>
 
-            </span>
-          </div>
+          </span>
         </div>
+      </div>
       {/* </div> */}
     </>
   )
