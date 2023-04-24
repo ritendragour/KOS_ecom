@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BsCartCheck } from "react-icons/bs";
+import { BsCartCheck,BsChatDots } from "react-icons/bs";
+import { BiSupport } from "react-icons/bi";
 
 const Ecom = ({ TCart }) => {
   return (
@@ -39,18 +40,27 @@ const Ecom = ({ TCart }) => {
               <span className="fw-bold d-flex align-items-center"><h5>20%OFF</h5></span>
             </div>
 
-            <div className="col-md-6 navProduct">
+            <div className="col-md-5 navProduct">
               <div className="d-flex form-inputs">
                 <input className="form-control" type="text" placeholder="Search any product..." />
                 <i className="bx bx-search"></i>
               </div>
 
             </div>
-            <div className="col-md-2 navProduct">
+            <div className="col-md-3 navProduct">
               <div className="d-flex form-inputs">
                 <Link className="navbar-brand  p-2 px-3 text-light rounded-5  d-flex align-items-center" to="/returnAndOrder">
                   <button className='btn text-light border d-flex align-items-center'><span>Return & Orders</span></button>
                   <i className="bx bx-search"></i></Link>
+
+                  <Link className="navbar-brand text-light rounded-5  d-flex align-items-center" to="/returnAndOrder">
+                  <button className='btn text-light  d-flex align-items-center'><h5><BiSupport/> Support</h5></button>
+                  <i className="bx bx-search"></i></Link>
+
+                  <Link className="navbar-brand text-light rounded-5  d-flex align-items-center" to="/returnAndOrder">
+                  <h5 className='d-flex align-items-center'><BsChatDots/>&nbsp;Chat</h5>
+                  <i className="bx bx-search"></i></Link>
+                  
               </div>
             </div>
 
@@ -58,7 +68,7 @@ const Ecom = ({ TCart }) => {
               <div className="d-flex  d-md-flex flex-row align-items-center">
                 <span className="shop-bag"><i className='bx bxs-shopping-bag'></i></span>
                 <div className="d-flex flex-column ms-2 mx-4">
-                  <h5 className="qty ">{TCart.length} Product</h5>
+                  <h5 className="qty "> {TCart.length?TCart.length : ""} Product</h5>
                 </div>
                 <Link className="navbar-brand  p-2 px-3 text-light rounded-5  d-flex align-items-center" to="/cart"><h5 className=' d-flex align-items-center'>{<BsCartCheck />} Cart</h5></Link>
               </div>

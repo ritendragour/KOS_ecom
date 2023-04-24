@@ -34,17 +34,22 @@ const CartItem = ({ cart }) => {
 
   const [multiPrice, setMultiPrice] = useState(price)
 
-  
   return (
     <>
-      <div className="card mt-5 productItem col-xl-4 p-3">
-        <button className="btn btn-warning w-25  mb-2" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseExample" + id} aria-expanded="false" aria-controls="collapseExample">
+      {/* <div className="card mt-5 productItem col-xl-4 p-3 "> */}
+        
+        <div className="collapse show" id={"collapseExample" + id}>
+          <div className="card card-body dfr">
+          <span>
+            <img src={image} className="card-img-top" alt="Product" />
+            </span>
+            <span className='dfc'>
+              <div className="btn-manager">
+            <button className="btn btn-warning w-25 mt-3 navProduct mb-2 float-end" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseExample" + id} aria-expanded="false" aria-controls="collapseExample">
           H / S
         </button>
-        <div className="collapse show" id={"collapseExample" + id}>
-          <div className="card card-body">
-            <img src={image} className="card-img-top" alt="Product" />
-            <h5 className="card-title">{title}</h5>
+              </div>
+            <h5 className="card-title mt-3">{title}</h5>
             <span className='df'>
               <h4>Price : {price}</h4>
               <h4>Total Price : {multiPrice}</h4>
@@ -59,14 +64,15 @@ const CartItem = ({ cart }) => {
                 <button className='btn border border-dark'
                   onClick={() => manyUseSum()}><AiOutlinePlus /></button>
               </div>
-
               <div className="float-end">
                 <button className='btn btn-danger' onClick={() => removeCart(id)}>Remove</button>
               </div>
             </span>
+
+            </span>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   )
 }

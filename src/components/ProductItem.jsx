@@ -32,7 +32,7 @@ const ProductItem = ({ Product }) => {
         {/* mt-5 */}
         <div className="card card-body">
 
-          <img src={image} className="card-img-top" alt="..." />
+          <img src={image} className="card-img-top-product" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <span className='df'>

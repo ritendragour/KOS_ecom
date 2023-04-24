@@ -11,6 +11,7 @@ const Cart = () => {
   // const totalPrice = Cart.reduce((p, c) => {
   //   return p + c.price
   // }, 0)
+  
   if(Cart.length === 0){
     return(
       <div className='text-center mt-5 bg-light'>
