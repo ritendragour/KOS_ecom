@@ -53,7 +53,7 @@ const CartItem = ({ cart }) => {
             <h5 className='text-primary btn border border-dark'>Share &nbsp; <BsShare/></h5>
             </span>
             <h4>Price : {price}</h4> &nbsp;&nbsp;
-            <span className="card-body df">
+            <span className="card-body df pm-0">
               {/* quantity logic */}
               <div className='df float-end'>
                 <h2 className='text-center'> QTY : &nbsp;</h2>

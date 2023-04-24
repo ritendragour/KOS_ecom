@@ -79,6 +79,10 @@
         height: auto;
         flex-direction: column;
     }
+    .pm-0{
+        padding: 0;
+        margin: 0;
+    }
     .cart-img{
         width: 100%;
     }

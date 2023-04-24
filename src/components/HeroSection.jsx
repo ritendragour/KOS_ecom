@@ -12,23 +12,23 @@ const HeroSection = () => {
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="10000">
       <img src="https://images.pexels.com/photos/3735641/pexels-photo-3735641.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" height="600" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption  d-md-block">
         <h1 className='text-dark mb-5'>KILL OFFLINE STORE</h1>
         <h2 className='text-dark mb-5'>Now finished offline shopping With K.O.S</h2>
       </div>
     </div>
     <div className="carousel-item" data-bs-interval="2000">
       <img src="https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" height="600" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
+      <div className="carousel-caption  d-md-block">
         <h1 className='text-light mb-5'>KILL OFFLINE STORE</h1>
         <h2 className='text-light mb-5'>Now finished offline shopping With K.O.S</h2>
       </div>
     </div>
     <div className="carousel-item">
       <img src="https://images.pexels.com/photos/298852/pexels-photo-298852.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" height="600" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-      <h1 className='text-light mb-5'>KILL OFFLINE STORE</h1>
-      <h2 className='text-light mb-5'>Now finished offline shopping With K.O.S</h2>
+      <div className="carousel-caption  d-md-block">
+      <h1 className='text-dark mb-5'>KILL OFFLINE STORE</h1>
+      <h2 className='text-dark mb-5'>Now finished offline shopping With K.O.S</h2>
       </div>
     </div>
   </div>
