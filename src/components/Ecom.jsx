@@ -61,7 +61,7 @@ const Ecom = ({ TCart }) => {
                   <i className="bx bx-search"></i></Link>
 
                   <Link className="navbar-brand text-light rounded-5  d-flex align-items-center" to="/returnAndOrder">
-                  <h5 className='d-flex align-items-center'><BsChatDots/>&nbsp;Chat</h5>
+                  {/* <h5 className='d-flex align-items-center'><BsChatDots/>&nbsp;Chat</h5> */}
                   <i className="bx bx-search"></i></Link>
                   
               </div>
